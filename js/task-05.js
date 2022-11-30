@@ -1,0 +1,10 @@
+const inputRef = document.querySelector('#name-input');
+const outputRef = document.querySelector('#name-output');
+
+inputRef.addEventListener('input', handleInputRefInput);
+
+function handleInputRefInput(event) {
+  !event.data
+    ? (outputRef.textContent = 'Anonymous')
+    : (outputRef.textContent = event.currentTarget.value);
+}
