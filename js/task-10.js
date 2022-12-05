@@ -46,5 +46,4 @@ function createBoxes() {
 
 function destroyBoxes() {
   divBoxesRef.innerHTML = '';
-  inputRef.removeAttribute('data-amount');
 }
